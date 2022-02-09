@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "poly.h"
 
@@ -94,11 +95,11 @@ void ecrire_polynome_float (p_polyf_t p)
 
 int egalite_polynome (p_polyf_t p1, p_polyf_t p2)
 {
-  /*
-    tester les deux polynomes p1 et p2
-  */
-
-  return 0 ;
+  if (p1->degre != p2->degre) return 0;
+  for (int i = 0; i <= p1->degre; i++){
+    if (p1->coeff[i] != p2->coeff[i]) return 0;
+  }
+  return 1;
 }
 
 p_polyf_t addition_polynome (p_polyf_t p1, p_polyf_t p2)
@@ -129,43 +130,59 @@ p_polyf_t addition_polynome (p_polyf_t p1, p_polyf_t p2)
 
 p_polyf_t multiplication_polynome_scalaire (p_polyf_t p, float alpha)
 {
-  /* alpha * p1 */
+  for (int i =0; i<=p->degre; i++){
+    p->coeff[i] = p->coeff[i] * alpha;
+  }
 
-  return NULL ;
+  return p;
 }
 
 float eval_polynome (p_polyf_t p, float x)
 {
-  /* 
-     valeur du polynome pour la valeur de x
-  */
+  float acc = 0;
 
-  return 0.0 ;
+  float x_pow = 1;
+  for (size_t i = 0; i <= p->degre; i++) {
+    acc += (p->coeff[i] * x_pow);
+    x_pow *= x;
+  }
+
+  return acc;
 }
 
 p_polyf_t multiplication_polynomes (p_polyf_t p1, p_polyf_t p2)
 {
-  /* p1 * p2 */
+  p_polyf_t new = creer_polynome(p1->degre + p2->degre - 1);
+  memset(new->coeff, 0, new->degre * sizeof(int));
 
-  return NULL ;
+  for (size_t i = 0; i <= p1->degre; i++) {
+    for (size_t j = 0; j <= p2->degre; j++) {
+      new->coeff[i+j] = p1->coeff[i] + p2->coeff[j];
+    }
+  }
+
+  return new;
 }
 
 p_polyf_t puissance_polynome (p_polyf_t p, int n)
 {
-  /* 
-     p^n
-  */
+
 
   return NULL ;
 }
 
 p_polyf_t composition_polynome (p_polyf_t p, p_polyf_t q)
 {
-  /*
-    p O q
-  */
+  p_polyf_t new = creer_polynome((p->degre + 1) * (q->degre + 1));
+  memset(new->coeff, 0, new->degre * sizeof(int));
 
-  return NULL ;
+  for (size_t i = 0; i <= p->degre; i++) {
+    for (size_t j = 0; j <= q->degre; j++) {
+      new->coeff[i + j] = p->coeff[i] * q->coeff[j];
+    }
+  }
+
+  return new;
 }
 
 

@@ -1,0 +1,6 @@
+# ninja log v5
+0	61	1644272895593751254	CMakeFiles/test_poly.dir/TP1/test_poly.c.o	7affab85c19ade01
+0	267	1644272895797752665	CMakeFiles/test_poly.dir/TP1/poly.c.o	a2ae648a8dbc77b1
+267	308	1644272895841752969	test_poly	1d5ed9cc4cb0b630
+1	76	1644273128091378253	CMakeFiles/test_poly.dir/TP1/test_poly.c.o	7affab85c19ade01
+77	100	1644273128115378423	test_poly	1d5ed9cc4cb0b630

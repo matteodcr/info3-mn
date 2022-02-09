@@ -1,3 +1,4 @@
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,8 +21,7 @@ int main (int argc, char **argv)
   ecrire_polynome_float (p1) ;
   ecrire_polynome_float (p2) ;
 
-  /*
-    ajouter du code pour tester les fonctions
-    sur les polynomes
-  */
+  assert(egalite_polynome(p1, p1));
+  assert(egalite_polynome(p2, p2));
+  assert(!egalite_polynome(p1, p2));
 }
