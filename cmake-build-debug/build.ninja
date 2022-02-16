@@ -42,56 +42,6 @@ include CMakeFiles/rules.ninja
 cmake_ninja_workdir = /home/matteo/Documents/code/info3-mn/cmake-build-debug/
 
 #############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/matteo/Documents/code/info3-mn/cmake-build-debug && /home/matteo/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles/edit_cache.util
-
-# =============================================================================
-# Object build statements for EXECUTABLE target perf_poly
-
-
-#############################################
-# Order-only phony target for perf_poly
-
-build cmake_object_order_depends_target_perf_poly: phony || CMakeFiles/perf_poly.dir
-
-build CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o: C_COMPILER__perf_poly_Debug /home/matteo/Documents/code/info3-mn/TP1/perf_poly.c || cmake_object_order_depends_target_perf_poly
-  DEP_FILE = CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o.d
-  FLAGS = -g -std=gnu11
-  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
-  OBJECT_DIR = CMakeFiles/perf_poly.dir
-  OBJECT_FILE_DIR = CMakeFiles/perf_poly.dir/TP1
-
-build CMakeFiles/perf_poly.dir/TP1/poly.c.o: C_COMPILER__perf_poly_Debug /home/matteo/Documents/code/info3-mn/TP1/poly.c || cmake_object_order_depends_target_perf_poly
-  DEP_FILE = CMakeFiles/perf_poly.dir/TP1/poly.c.o.d
-  FLAGS = -g -std=gnu11
-  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
-  OBJECT_DIR = CMakeFiles/perf_poly.dir
-  OBJECT_FILE_DIR = CMakeFiles/perf_poly.dir/TP1
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target perf_poly
-
-
-#############################################
-# Link the executable perf_poly
-
-build perf_poly: C_EXECUTABLE_LINKER__perf_poly_Debug CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o CMakeFiles/perf_poly.dir/TP1/poly.c.o
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/perf_poly.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = perf_poly
-  TARGET_PDB = perf_poly.dbg
-
-
-#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -142,6 +92,103 @@ build test_poly: C_EXECUTABLE_LINKER__test_poly_Debug CMakeFiles/test_poly.dir/T
   TARGET_PDB = test_poly.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target perf_poly
+
+
+#############################################
+# Order-only phony target for perf_poly
+
+build cmake_object_order_depends_target_perf_poly: phony || CMakeFiles/perf_poly.dir
+
+build CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o: C_COMPILER__perf_poly_Debug /home/matteo/Documents/code/info3-mn/TP1/perf_poly.c || cmake_object_order_depends_target_perf_poly
+  DEP_FILE = CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o.d
+  FLAGS = -g -std=gnu11
+  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
+  OBJECT_DIR = CMakeFiles/perf_poly.dir
+  OBJECT_FILE_DIR = CMakeFiles/perf_poly.dir/TP1
+
+build CMakeFiles/perf_poly.dir/TP1/poly.c.o: C_COMPILER__perf_poly_Debug /home/matteo/Documents/code/info3-mn/TP1/poly.c || cmake_object_order_depends_target_perf_poly
+  DEP_FILE = CMakeFiles/perf_poly.dir/TP1/poly.c.o.d
+  FLAGS = -g -std=gnu11
+  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
+  OBJECT_DIR = CMakeFiles/perf_poly.dir
+  OBJECT_FILE_DIR = CMakeFiles/perf_poly.dir/TP1
+
+build CMakeFiles/perf_poly.dir/TP1/test_poly_creux.c.o: C_COMPILER__perf_poly_Debug /home/matteo/Documents/code/info3-mn/TP1/test_poly_creux.c || cmake_object_order_depends_target_perf_poly
+  DEP_FILE = CMakeFiles/perf_poly.dir/TP1/test_poly_creux.c.o.d
+  FLAGS = -g -std=gnu11
+  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
+  OBJECT_DIR = CMakeFiles/perf_poly.dir
+  OBJECT_FILE_DIR = CMakeFiles/perf_poly.dir/TP1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target perf_poly
+
+
+#############################################
+# Link the executable perf_poly
+
+build perf_poly: C_EXECUTABLE_LINKER__perf_poly_Debug CMakeFiles/perf_poly.dir/TP1/perf_poly.c.o CMakeFiles/perf_poly.dir/TP1/poly.c.o CMakeFiles/perf_poly.dir/TP1/test_poly_creux.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/perf_poly.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = perf_poly
+  TARGET_PDB = perf_poly.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_poly_creux
+
+
+#############################################
+# Order-only phony target for test_poly_creux
+
+build cmake_object_order_depends_target_test_poly_creux: phony || CMakeFiles/test_poly_creux.dir
+
+build CMakeFiles/test_poly_creux.dir/TP1/test_poly_creux.c.o: C_COMPILER__test_poly_creux_Debug /home/matteo/Documents/code/info3-mn/TP1/test_poly_creux.c || cmake_object_order_depends_target_test_poly_creux
+  DEP_FILE = CMakeFiles/test_poly_creux.dir/TP1/test_poly_creux.c.o.d
+  FLAGS = -g -std=gnu11
+  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
+  OBJECT_DIR = CMakeFiles/test_poly_creux.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_poly_creux.dir/TP1
+
+build CMakeFiles/test_poly_creux.dir/TP1/poly_creux.c.o: C_COMPILER__test_poly_creux_Debug /home/matteo/Documents/code/info3-mn/TP1/poly_creux.c || cmake_object_order_depends_target_test_poly_creux
+  DEP_FILE = CMakeFiles/test_poly_creux.dir/TP1/poly_creux.c.o.d
+  FLAGS = -g -std=gnu11
+  INCLUDES = -I/home/matteo/Documents/code/info3-mn/TP1
+  OBJECT_DIR = CMakeFiles/test_poly_creux.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_poly_creux.dir/TP1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_poly_creux
+
+
+#############################################
+# Link the executable test_poly_creux
+
+build test_poly_creux: C_EXECUTABLE_LINKER__test_poly_creux_Debug CMakeFiles/test_poly_creux.dir/TP1/test_poly_creux.c.o CMakeFiles/test_poly_creux.dir/TP1/poly_creux.c.o
+  FLAGS = -g
+  LINK_LIBRARIES = -lm
+  OBJECT_DIR = CMakeFiles/test_poly_creux.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test_poly_creux
+  TARGET_PDB = test_poly_creux.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/matteo/Documents/code/info3-mn/cmake-build-debug && /home/matteo/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+# =============================================================================
 # Target aliases.
 
 # =============================================================================
@@ -152,7 +199,7 @@ build test_poly: C_EXECUTABLE_LINKER__test_poly_Debug CMakeFiles/test_poly.dir/T
 #############################################
 # Folder: /home/matteo/Documents/code/info3-mn/cmake-build-debug
 
-build all: phony perf_poly test_poly
+build all: phony test_poly perf_poly test_poly_creux
 
 # =============================================================================
 # Built-in targets

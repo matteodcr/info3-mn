@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "perf_poly::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-perf_poly-Debug-a9b676b8088c3dcef684.json",
+					"jsonFile" : "target-perf_poly-Debug-61c5609f3f8fb4d7e3ee.json",
 					"name" : "perf_poly",
 					"projectIndex" : 0
 				},
@@ -50,6 +52,13 @@
 					"id" : "test_poly::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-test_poly-Debug-acafdb14866c72b22f75.json",
 					"name" : "test_poly",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_poly_creux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_poly_creux-Debug-a450940f18ffa1a1acbf.json",
+					"name" : "test_poly_creux",
 					"projectIndex" : 0
 				}
 			]
