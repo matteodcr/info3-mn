@@ -62,4 +62,29 @@ add_executable(test_asum
         examples/utils.h
         )
 
+add_executable(test_iamin
+        examples/test_iamin.c
+        examples/utils.c
+        src/complexe.c
+        src/iamin.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+add_executable(test_iamax
+        examples/test_iamax.c
+        examples/utils.c
+        src/complexe.c
+        src/iamax.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+
 
