@@ -86,5 +86,19 @@ add_executable(test_iamax
         examples/utils.h
         )
 
+add_executable(test_nrm2
+        examples/test_nrm2.c
+        examples/utils.c
+        src/complexe.c
+        src/nrm2.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+target_link_libraries(test_nrm2 m)
+
 
 
