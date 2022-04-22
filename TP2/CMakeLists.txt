@@ -60,7 +60,7 @@ add_executable(test_asum
         include/complexe.h
         include/mnblas.h
         examples/utils.h
-        )
+        src/gemv.c examples/test_gemv.c)
 
 add_executable(test_iamin
         examples/test_iamin.c
@@ -99,6 +99,18 @@ add_executable(test_nrm2
         )
 
 target_link_libraries(test_nrm2 m)
+
+add_executable(test_gemv
+        examples/test_gemv.c
+        examples/utils.c
+        src/complexe.c
+        src/gemv.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
 
 
 

@@ -8,9 +8,13 @@
 
 #endif
 
-////////
+
+
+////////////
+/*VECTEURS*/
+///////////
+
 /*INIT*/
-////////
 
 float *init_vec_float(int size) {
   return malloc(sizeof(float *) * size);
@@ -28,9 +32,7 @@ complexe_double_t *init_vec_complexe_double(int size) {
   return malloc(sizeof(double *) * (size * 2));
 }
 
-////////
 /*FILL*/
-////////
 
 void fill_vec_float(float *v, int size, float deb) {
   float cpt = deb;
@@ -68,37 +70,88 @@ void fill_vec_complexe_double(complexe_double_t *v, int size, double debre, doub
   }
 }
 
-////////
 /*PRINT*/
-////////
 
 void print_vec_f(float *v, int size) {
   for (int i = 0; i < size; i++) {
-    printf("%f, ", v[i]);
+    printf("%.1f, ", v[i]);
   }
   printf("\n");
 }
 
 void print_vec_d(double *v, int size) {
   for (int i = 0; i < size; i++) {
-    printf("%lf, ", v[i]);
+    printf("%.1lf, ", v[i]);
   }
   printf("\n");
 }
 
 void print_vec_cf(complexe_float_t *v, int size) {
   for (int i = 0; i < size; i++) {
-    printf("(%f, %f), ", v[i].real, v[i].imaginary);
+    printf("(%.1f, %.1f), ", v[i].real, v[i].imaginary);
   }
   printf("\n");
 }
 
 void print_vec_cd(complexe_double_t *v, int size) {
   for (int i = 0; i < size; i++) {
-    printf("(%lf, %lf), ", v[i].real, v[i].imaginary);
+    printf("(%.1lf, %.1lf), ", v[i].real, v[i].imaginary);
   }
   printf("\n");
 }
 
+////////////
+/*MATRICES*/
+////////////q
+
+void print_mat_f(float *v, int size, int r) {
+  for (int i = 0; i < size; i++) {
+    if (i % r == 0) {
+      printf("\n");
+    }
+    printf("%.1f, ", v[i]);
+  }
+  printf("\n");
+}
+
+void print_mat_d(double *v, int size, int r) {
+  for (int i = 0; i < size; i++) {
+    if (i % r == 0) {
+      printf("\n");
+    }
+    printf("%.1lf, ", v[i]);
+  }
+  printf("\n");
+}
+
+void print_mat_cf(complexe_float_t *v, int size, int r) {
+  for (int i = 0; i < size; i++) {
+    if (i % r == 0) {
+      printf("\n");
+    }
+    printf("(%.1f, %.1f), ", v[i].real, v[i].imaginary);
+  }
+  printf("\n");
+}
+
+void print_mat_cd(complexe_double_t *v, int size, int r) {
+  for (int i = 0; i < size; i++) {
+    if (i % r == 0) {
+      printf("\n");
+    }
+    printf("(%.1lf, %.1lf), ", v[i].real, v[i].imaginary);
+  }
+  printf("\n");
+}
+
+void transposition_mat_float(float *v, int size, int hauteur, int largeur) {
+  float *tmp = init_vec_float(size);
+  for (int i = 0; i < largeur; i++) {
+    for (int j = 0; j < hauteur; j++) {
+      tmp[i * hauteur + j] = tmp[j * largeur];
+    }
+  }
+  v = tmp;
+}
 
 

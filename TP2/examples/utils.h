@@ -46,4 +46,13 @@ void print_vec_cf(complexe_float_t *v, int size);
 
 void print_vec_cd(complexe_double_t *v, int size);
 
+void print_mat_f(float *v, int size, int r);
+
+void print_mat_d(double *v, int size, int r);
+
+void print_mat_cf(complexe_float_t *v, int size, int r);
+
+void print_mat_cd(complexe_double_t *v, int size, int r);
+
+
 #endif //TP2_UTILS_H
