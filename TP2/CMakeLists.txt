@@ -38,4 +38,28 @@ add_executable(test_dot
         examples/utils.h
         )
 
+add_executable(test_axpy
+        examples/test_axpy.c
+        examples/utils.c
+        src/complexe.c
+        src/axpy.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+add_executable(test_asum
+        examples/test_asum.c
+        examples/utils.c
+        src/complexe.c
+        src/asum.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
 
