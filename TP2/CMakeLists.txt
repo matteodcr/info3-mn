@@ -6,11 +6,45 @@ set(CMAKE_C_STANDARD 11)
 include_directories(examples)
 include_directories(include)
 
-add_executable(test_swap
-        examples/test_swap.c
+add_executable(test_complexe
+        examples/test_complexe.c
         examples/utils.c
         src/complexe.c
-        src/swap.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+add_executable(test_complexe2
+        examples/test_complexe2.c
+        examples/utils.c
+        examples/flop.c
+        examples/flop.h
+        src/complexe.c
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+add_executable(test_complexe3
+        examples/test_complexe3.c
+        examples/utils.c
+        src/complexe.c
+        examples/flop.c
+        examples/flop.h
+        include/complexe.h
+        include/mnblas.h
+        examples/utils.h
+        )
+
+add_executable(test_complexe4
+        examples/test_complexe4.c
+        examples/utils.c
+        src/complexe.c
+        examples/flop.c
+        examples/flop.h
         include/complexe.h
         include/mnblas.h
         examples/utils.h
