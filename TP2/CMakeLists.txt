@@ -39,22 +39,13 @@ add_executable(test_complexe3
         examples/utils.h
         )
 
-add_executable(test_complexe4
-        examples/test_complexe4.c
-        examples/utils.c
-        src/complexe.c
-        examples/flop.c
-        examples/flop.h
-        include/complexe.h
-        include/mnblas.h
-        examples/utils.h
-        )
-
 add_executable(test_swap
         examples/test_swap.c
         examples/utils.c
         src/complexe.c
         src/swap.c
+        examples/flop.c
+        examples/flop.h
         include/complexe.h
         include/mnblas.h
         examples/utils.h
@@ -65,6 +56,8 @@ add_executable(test_copy
         examples/utils.c
         src/complexe.c
         src/copy.c
+        examples/flop.c
+        examples/flop.h
         include/complexe.h
         include/mnblas.h
         examples/utils.h
@@ -104,7 +97,7 @@ add_executable(test_asum
         include/complexe.h
         include/mnblas.h
         examples/utils.h
-        src/gemv.c examples/test_gemv.c)
+        )
 
 add_executable(test_iamin
         examples/test_iamin.c
