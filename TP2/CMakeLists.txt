@@ -149,5 +149,10 @@ add_executable(test_gemv
         examples/utils.h
         )
 
-
-
+add_executable(test_gemm
+        examples/test_gemm.c
+        examples/utils.c
+        src/complexe.c
+        src/gemm.c
+        examples/flop.c
+        )

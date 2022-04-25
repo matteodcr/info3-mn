@@ -4,6 +4,7 @@ project(info3_mn C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(TP1)
+add_subdirectory(TP2)
 
 add_executable(test_poly
         TP1/test_poly.c

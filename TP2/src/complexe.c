@@ -54,3 +54,13 @@ complexe_double_t div_complexe_double(const complexe_double_t c1, const complexe
 
   return r;
 }
+
+inline complexe_float_t cond_conj_f(char cond, complexe_float_t c) {
+    if (cond) c.imaginary *= -1.0f;
+    return c;
+}
+
+inline complexe_double_t cond_conj_d(char cond, complexe_double_t c) {
+    if (cond) c.imaginary *= -1.0;
+    return c;
+}
