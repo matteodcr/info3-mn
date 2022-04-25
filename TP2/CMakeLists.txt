@@ -60,7 +60,6 @@ add_executable(test_swap
         examples/utils.h
         )
 
-
 add_executable(test_copy
         examples/test_copy.c
         examples/utils.c
