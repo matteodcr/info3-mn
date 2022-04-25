@@ -76,7 +76,6 @@ void mncblas_zdotu_sub(const int N, const void *X, const int incX,
   complexe_double_t *PY = (complexe_double_t *) Y;
 
   for (; i < N; i += incX, j += incY) {
-    PX[i].imaginary *= -1;
     dot = add_complexe_double(dot, mult_complexe_double(PX[i], PY[j]));
   }
   *(complexe_double_t *) dotu = dot;
