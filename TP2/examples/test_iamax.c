@@ -68,7 +68,6 @@ int main() {
   struct timespec start_spec, end_spec;
   unsigned long long int start_tsc, end_tsc;
 
-  float res_FLOAT;
   int i;
   init_flop_tsc();
 
@@ -83,7 +82,6 @@ int main() {
     calcul_flop_tsc("sdot tsc ", 2 * SIZE, end_tsc - start_tsc);
   }
 
-  printf("res = %f\n", res_FLOAT);
   printf("==========================================================\n");
 
   init_flop_micro();
@@ -98,7 +96,6 @@ int main() {
     calcul_flop_micro("sdot micro", 2 * SIZE, tdiff_micro(&start, &end));
   }
 
-  printf("res = %f\n", res_FLOAT);
   printf("==========================================================\n");
 
   init_flop_nano();
@@ -117,7 +114,6 @@ int main() {
   printf("PERFORMANCES DOUBLE");
   printf("\n=========================================================\n\n");
 
-  double res_DOUBLE;
   init_flop_tsc();
 
   for (i = 0; i < NB_FOIS; i++) {
@@ -131,7 +127,6 @@ int main() {
     calcul_flop_tsc("sdot tsc", 2 * SIZE, end_tsc - start_tsc);
   }
 
-  printf("res = %f\n", res_DOUBLE);
   printf("==========================================================\n");
 
   init_flop_micro();
@@ -146,7 +141,6 @@ int main() {
     calcul_flop_micro("sdot micro", 2 * SIZE, tdiff_micro(&start, &end));
   }
 
-  printf("res = %f\n", res_DOUBLE);
   printf("==========================================================\n");
 
   init_flop_nano();
