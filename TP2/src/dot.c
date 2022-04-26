@@ -35,7 +35,7 @@ void mncblas_cdotu_sub(const int N, const void *X, const int incX,
   complexe_float_t *PX = (complexe_float_t *) X;
   complexe_float_t *PY = (complexe_float_t *) Y;
 
-  register complexe_float_t dot = { .real = 0, .imaginary = 0 };
+  complexe_float_t dot = { .real = 0, .imaginary = 0 };
 #pragma omp parallel for
   for (unsigned int k = 0; k < max; k++) {
     unsigned int i = k * incX, j = k * incY;
@@ -55,8 +55,8 @@ void mncblas_cdotc_sub(const int N, const void *X, const int incX,
   complexe_float_t *PX = (complexe_float_t *) X;
   complexe_float_t *PY = (complexe_float_t *) Y;
 
-  register complexe_float_t dot = { .real = 0, .imaginary = 0 };
-#pragma omp parallel for reduction(+:dot)
+  complexe_float_t dot = { .real = 0, .imaginary = 0 };
+#pragma omp parallel for
   for (unsigned int k = 0; k < max; k++) {
     unsigned int i = k * incX, j = k * incY;
     PX[i].imaginary *= -1;
@@ -76,7 +76,7 @@ void mncblas_zdotu_sub(const int N, const void *X, const int incX,
   complexe_double_t *PX = (complexe_double_t *) X;
   complexe_double_t *PY = (complexe_double_t *) Y;
 
-  register complexe_double_t dot = { .real = 0, .imaginary = 0 };
+  complexe_double_t dot = { .real = 0, .imaginary = 0 };
 #pragma omp parallel for
   for (unsigned int k = 0; k < max; k++) {
     unsigned int i = k * incX, j = k * incY;
@@ -96,7 +96,7 @@ void mncblas_zdotc_sub(const int N, const void *X, const int incX,
   complexe_double_t *PX = (complexe_double_t *) X;
   complexe_double_t *PY = (complexe_double_t *) Y;
 
-  register complexe_double_t dot = { .real = 0, .imaginary = 0 };
+  complexe_double_t dot = { .real = 0, .imaginary = 0 };
 #pragma omp parallel for
   for (unsigned int k = 0; k < max; k++) {
     unsigned int i = k * incX, j = k * incY;
@@ -109,7 +109,3 @@ void mncblas_zdotc_sub(const int N, const void *X, const int incX,
   }
   *(complexe_double_t *) dotc = dot;
 }
-
-
-
-
