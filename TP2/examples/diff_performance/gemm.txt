@@ -1,0 +1,101 @@
+***** AVANT
+
+FLOAT ==========================================================
+residu_nano = 1.400000e-07
+sdot nano  65536 operations 0.0369896 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0330395 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0326810 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0319557 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0317161 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0322866 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0320501 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0312633 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0317673 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0337022 cycles Performance 0.002 GFLOP/s
+DOUBLE ==========================================================
+residu_nano = 3.000000e-08
+sdot nano  65536 operations 0.0415293 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0412150 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0412305 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0410486 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0410870 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0410614 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0412850 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0411842 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0412646 cycles Performance 0.002 GFLOP/s
+sdot nano  65536 operations 0.0413577 cycles Performance 0.002 GFLOP/s
+==========================================================
+residu_nano = 4.000000e-08
+sdot nano  131072 operations 0.2142975 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2139957 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2136910 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2137022 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2134599 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2134327 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2137919 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2135478 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2133520 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.2136568 cycles Performance 0.001 GFLOP/s
+==========================================================
+residu_nano = 3.000000e-08
+sdot nano  131072 operations 0.1600116 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1590999 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1595846 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1592806 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1594739 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1588841 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1590373 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1589004 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1615989 cycles Performance 0.001 GFLOP/s
+sdot nano  131072 operations 0.1614861 cycles Performance 0.001 GFLOP/s
+
+****** APRES
+
+FLOAT ==========================================================
+residu_nano = 1.700000e-07
+sdot nano  65536 operations 0.0110171 cycles Performance 0.006 GFLOP/s
+sdot nano  65536 operations 0.0099410 cycles Performance 0.007 GFLOP/s
+sdot nano  65536 operations 0.0078467 cycles Performance 0.008 GFLOP/s
+sdot nano  65536 operations 0.0098746 cycles Performance 0.007 GFLOP/s
+sdot nano  65536 operations 0.0080012 cycles Performance 0.008 GFLOP/s
+sdot nano  65536 operations 0.0098973 cycles Performance 0.007 GFLOP/s
+sdot nano  65536 operations 0.0081298 cycles Performance 0.008 GFLOP/s
+sdot nano  65536 operations 0.0072854 cycles Performance 0.009 GFLOP/s
+sdot nano  65536 operations 0.0105118 cycles Performance 0.006 GFLOP/s
+sdot nano  65536 operations 0.0074103 cycles Performance 0.009 GFLOP/s
+DOUBLE ==========================================================
+residu_nano = 5.000000e-08
+sdot nano  65536 operations 0.0147722 cycles Performance 0.004 GFLOP/s
+sdot nano  65536 operations 0.0122383 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0133402 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0147586 cycles Performance 0.004 GFLOP/s
+sdot nano  65536 operations 0.0149223 cycles Performance 0.004 GFLOP/s
+sdot nano  65536 operations 0.0144577 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0133494 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0134525 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0124264 cycles Performance 0.005 GFLOP/s
+sdot nano  65536 operations 0.0168565 cycles Performance 0.004 GFLOP/s
+==========================================================
+residu_nano = 7.000000e-08
+sdot nano  131072 operations 0.0524775 cycles Performance 0.002 GFLOP/s
+sdot nano  131072 operations 0.0498092 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0504008 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0490570 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0505260 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0515535 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0517752 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0501565 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0537907 cycles Performance 0.002 GFLOP/s
+sdot nano  131072 operations 0.0564455 cycles Performance 0.002 GFLOP/s
+==========================================================
+residu_nano = 5.000000e-08
+sdot nano  131072 operations 0.0420542 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0393587 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0417176 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0379938 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0372045 cycles Performance 0.004 GFLOP/s
+sdot nano  131072 operations 0.0371737 cycles Performance 0.004 GFLOP/s
+sdot nano  131072 operations 0.0378735 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0395677 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0377399 cycles Performance 0.003 GFLOP/s
+sdot nano  131072 operations 0.0418399 cycles Performance 0.003 GFLOP/s

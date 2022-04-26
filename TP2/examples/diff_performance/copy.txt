@@ -1,7 +1,5 @@
 **** AVANT
-=========================================================
 PERFORMANCES FLOAT
-=========================================================
 
 residu_tsc = 63 cycles
 sdot tsc  131072 operations 381234 cycles Performance 0.894 GFLOP/s
@@ -14,7 +12,6 @@ sdot tsc  131072 operations 153195 cycles Performance 2.225 GFLOP/s
 sdot tsc  131072 operations 153174 cycles Performance 2.225 GFLOP/s
 sdot tsc  131072 operations 158067 cycles Performance 2.156 GFLOP/s
 sdot tsc  131072 operations 160818 cycles Performance 2.119 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0000730 seconde  Performance 1.796 GFLOP/s
 sdot micro 131072 operations duree 0.0000720 seconde  Performance 1.820 GFLOP/s
@@ -26,7 +23,6 @@ sdot micro 131072 operations duree 0.0000730 seconde  Performance 1.796 GFLOP/s
 sdot micro 131072 operations duree 0.0001010 seconde  Performance 1.298 GFLOP/s
 sdot micro 131072 operations duree 0.0000780 seconde  Performance 1.680 GFLOP/s
 sdot micro 131072 operations duree 0.0000800 seconde  Performance 1.638 GFLOP/s
-==========================================================
 residu_nano = 1.310000e-07
 sdot nano  131072 operations 0.0000776 cycles Performance 1.690 GFLOP/s
 sdot nano  131072 operations 0.0000775 cycles Performance 1.691 GFLOP/s
@@ -40,9 +36,7 @@ sdot nano  131072 operations 0.0000773 cycles Performance 1.696 GFLOP/s
 sdot nano  131072 operations 0.0000770 cycles Performance 1.701 GFLOP/s
 
 
-=========================================================
 PERFORMANCES DOUBLE
-=========================================================
 
 residu_tsc = 63 cycles
 sdot tsc 131072 operations 212751 cycles Performance 1.602 GFLOP/s
@@ -55,7 +49,6 @@ sdot tsc 131072 operations 171843 cycles Performance 1.983 GFLOP/s
 sdot tsc 131072 operations 161847 cycles Performance 2.106 GFLOP/s
 sdot tsc 131072 operations 237111 cycles Performance 1.437 GFLOP/s
 sdot tsc 131072 operations 272601 cycles Performance 1.250 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0000960 seconde  Performance 1.365 GFLOP/s
 sdot micro 131072 operations duree 0.0000920 seconde  Performance 1.425 GFLOP/s
@@ -67,7 +60,6 @@ sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
 sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
 sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
 sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
-==========================================================
 residu_nano = 8.000000e-08
 sdot nano 131072 operations 0.0000883 cycles Performance 1.485 GFLOP/s
 sdot nano 131072 operations 0.0000758 cycles Performance 1.728 GFLOP/s
@@ -81,9 +73,7 @@ sdot nano 131072 operations 0.0000762 cycles Performance 1.720 GFLOP/s
 sdot nano 131072 operations 0.0000824 cycles Performance 1.591 GFLOP/s
 
 
-=========================================================
 PERFORMANCES COMPLEXE FLOAT
-=========================================================
 
 residu_tsc = 21 cycles
 sdot tsc 131072 operations 274176 cycles Performance 1.243 GFLOP/s
@@ -96,7 +86,6 @@ sdot tsc 131072 operations 219849 cycles Performance 1.550 GFLOP/s
 sdot tsc 131072 operations 216909 cycles Performance 1.571 GFLOP/s
 sdot tsc 131072 operations 199479 cycles Performance 1.708 GFLOP/s
 sdot tsc 131072 operations 183267 cycles Performance 1.860 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0000770 seconde  Performance 1.702 GFLOP/s
 sdot micro 131072 operations duree 0.0000750 seconde  Performance 1.748 GFLOP/s
@@ -108,7 +97,6 @@ sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
 sdot micro 131072 operations duree 0.0000760 seconde  Performance 1.725 GFLOP/s
 sdot micro 131072 operations duree 0.0000870 seconde  Performance 1.507 GFLOP/s
 sdot micro 131072 operations duree 0.0000750 seconde  Performance 1.748 GFLOP/s
-==========================================================
 residu_nano = 8.100000e-08
 sdot nano  131072 operations 0.0000758 cycles Performance 1.730 GFLOP/s
 sdot nano  131072 operations 0.0000902 cycles Performance 1.453 GFLOP/s
@@ -122,9 +110,7 @@ sdot nano  131072 operations 0.0000852 cycles Performance 1.538 GFLOP/s
 sdot nano  131072 operations 0.0000888 cycles Performance 1.476 GFLOP/s
 
 
-=========================================================
 PERFORMANCES COMPLEXE DOUBLE
-=========================================================
 
 residu_tsc = 42 cycles
 sdot tsc  131072 operations 861567 cycles Performance 0.396 GFLOP/s
@@ -137,7 +123,6 @@ sdot tsc  131072 operations 313173 cycles Performance 1.088 GFLOP/s
 sdot tsc  131072 operations 265923 cycles Performance 1.282 GFLOP/s
 sdot tsc  131072 operations 302526 cycles Performance 1.126 GFLOP/s
 sdot tsc  131072 operations 399294 cycles Performance 0.853 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0001090 seconde  Performance 1.202 GFLOP/s
 sdot micro 131072 operations duree 0.0000850 seconde  Performance 1.542 GFLOP/s
@@ -149,7 +134,6 @@ sdot micro 131072 operations duree 0.0003210 seconde  Performance 0.408 GFLOP/s
 sdot micro 131072 operations duree 0.0003580 seconde  Performance 0.366 GFLOP/s
 sdot micro 131072 operations duree 0.0003750 seconde  Performance 0.350 GFLOP/s
 sdot micro 131072 operations duree 0.0002390 seconde  Performance 0.548 GFLOP/s
-==========================================================
 residu_nano = 8.000000e-08
 sdot nano  131072 operations 0.0001179 cycles Performance 1.112 GFLOP/s
 sdot nano  131072 operations 0.0001041 cycles Performance 1.259 GFLOP/s
@@ -162,14 +146,9 @@ sdot nano  131072 operations 0.0001336 cycles Performance 0.981 GFLOP/s
 sdot nano  131072 operations 0.0001502 cycles Performance 0.873 GFLOP/s
 sdot nano  131072 operations 0.0001271 cycles Performance 1.031 GFLOP/s
 
-
-
-
 *************** AVEC
 
-=========================================================
 PERFORMANCES FLOAT
-=========================================================
 
 residu_tsc = 84 cycles
 sdot tsc  131072 operations 56868 cycles Performance 5.993 GFLOP/s
@@ -182,7 +161,6 @@ sdot tsc  131072 operations 53508 cycles Performance 6.369 GFLOP/s
 sdot tsc  131072 operations 59745 cycles Performance 5.704 GFLOP/s
 sdot tsc  131072 operations 50379 cycles Performance 6.764 GFLOP/s
 sdot tsc  131072 operations 4711539 cycles Performance 0.072 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0011190 seconde  Performance 0.117 GFLOP/s
 sdot micro 131072 operations duree 0.0013420 seconde  Performance 0.098 GFLOP/s
@@ -194,7 +172,6 @@ sdot micro 131072 operations duree 0.0000150 seconde  Performance 8.738 GFLOP/s
 sdot micro 131072 operations duree 0.0000140 seconde  Performance 9.362 GFLOP/s
 sdot micro 131072 operations duree 0.0000170 seconde  Performance 7.710 GFLOP/s
 sdot micro 131072 operations duree 0.0006210 seconde  Performance 0.211 GFLOP/s
-==========================================================
 residu_nano = 9.000000e-08
 sdot nano  131072 operations 0.0008424 cycles Performance 0.156 GFLOP/s
 sdot nano  131072 operations 0.0010895 cycles Performance 0.120 GFLOP/s
@@ -208,9 +185,7 @@ sdot nano  131072 operations 0.0000125 cycles Performance 10.450 GFLOP/s
 sdot nano  131072 operations 0.0000133 cycles Performance 9.874 GFLOP/s
 
 
-=========================================================
 PERFORMANCES DOUBLE
-=========================================================
 
 residu_tsc = 21 cycles
 sdot tsc 131072 operations 31689 cycles Performance 10.754 GFLOP/s
@@ -223,7 +198,6 @@ sdot tsc 131072 operations 49119 cycles Performance 6.938 GFLOP/s
 sdot tsc 131072 operations 3671976 cycles Performance 0.093 GFLOP/s
 sdot tsc 131072 operations 1684221 cycles Performance 0.202 GFLOP/s
 sdot tsc 131072 operations 1881201 cycles Performance 0.181 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0013850 seconde  Performance 0.095 GFLOP/s
 sdot micro 131072 operations duree 0.0012750 seconde  Performance 0.103 GFLOP/s
@@ -235,7 +209,6 @@ sdot micro 131072 operations duree 0.0000140 seconde  Performance 9.362 GFLOP/s
 sdot micro 131072 operations duree 0.0000130 seconde  Performance 10.082 GFLOP/s
 sdot micro 131072 operations duree 0.0000130 seconde  Performance 10.082 GFLOP/s
 sdot micro 131072 operations duree 0.0000150 seconde  Performance 8.738 GFLOP/s
-==========================================================
 residu_nano = 9.000000e-08
 sdot nano 131072 operations 0.0000155 cycles Performance 8.473 GFLOP/s
 sdot nano 131072 operations 0.0000147 cycles Performance 8.906 GFLOP/s
@@ -249,9 +222,7 @@ sdot nano 131072 operations 0.0000135 cycles Performance 9.698 GFLOP/s
 sdot nano 131072 operations 0.0000141 cycles Performance 9.312 GFLOP/s
 
 
-=========================================================
 PERFORMANCES COMPLEXE FLOAT
-=========================================================
 
 residu_tsc = 42 cycles
 sdot tsc 131072 operations 75621 cycles Performance 4.507 GFLOP/s
@@ -264,7 +235,6 @@ sdot tsc 131072 operations 42840 cycles Performance 7.955 GFLOP/s
 sdot tsc 131072 operations 59913 cycles Performance 5.688 GFLOP/s
 sdot tsc 131072 operations 52878 cycles Performance 6.445 GFLOP/s
 sdot tsc 131072 operations 56427 cycles Performance 6.039 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0000180 seconde  Performance 7.282 GFLOP/s
 sdot micro 131072 operations duree 0.0000170 seconde  Performance 7.710 GFLOP/s
@@ -276,7 +246,6 @@ sdot micro 131072 operations duree 0.0000140 seconde  Performance 9.362 GFLOP/s
 sdot micro 131072 operations duree 0.0000130 seconde  Performance 10.082 GFLOP/s
 sdot micro 131072 operations duree 0.0000130 seconde  Performance 10.082 GFLOP/s
 sdot micro 131072 operations duree 0.0000140 seconde  Performance 9.362 GFLOP/s
-==========================================================
 residu_nano = 9.000000e-08
 sdot nano  131072 operations 0.0000128 cycles Performance 10.261 GFLOP/s
 sdot nano  131072 operations 0.0037361 cycles Performance 0.035 GFLOP/s
@@ -290,9 +259,7 @@ sdot nano  131072 operations 0.0000141 cycles Performance 9.265 GFLOP/s
 sdot nano  131072 operations 0.0002537 cycles Performance 0.517 GFLOP/s
 
 
-=========================================================
 PERFORMANCES COMPLEXE DOUBLE
-=========================================================
 
 residu_tsc = 21 cycles
 sdot tsc  131072 operations 138306 cycles Performance 2.464 GFLOP/s
@@ -305,7 +272,6 @@ sdot tsc  131072 operations 3530583 cycles Performance 0.097 GFLOP/s
 sdot tsc  131072 operations 1263759 cycles Performance 0.270 GFLOP/s
 sdot tsc  131072 operations 152859 cycles Performance 2.229 GFLOP/s
 sdot tsc  131072 operations 114072 cycles Performance 2.987 GFLOP/s
-==========================================================
 residu_micro = 0.000000e+00
 sdot micro 131072 operations duree 0.0000250 seconde  Performance 5.243 GFLOP/s
 sdot micro 131072 operations duree 0.0000240 seconde  Performance 5.461 GFLOP/s
@@ -317,7 +283,6 @@ sdot micro 131072 operations duree 0.0000240 seconde  Performance 5.461 GFLOP/s
 sdot micro 131072 operations duree 0.0000830 seconde  Performance 1.579 GFLOP/s
 sdot micro 131072 operations duree 0.0012230 seconde  Performance 0.107 GFLOP/s
 sdot micro 131072 operations duree 0.0010880 seconde  Performance 0.120 GFLOP/s
-==========================================================
 residu_nano = 8.000000e-08
 sdot nano  131072 operations 0.0009365 cycles Performance 0.140 GFLOP/s
 sdot nano  131072 operations 0.0010861 cycles Performance 0.121 GFLOP/s
