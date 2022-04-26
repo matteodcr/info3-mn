@@ -6,6 +6,11 @@ set(CMAKE_C_STANDARD 11)
 include_directories(examples)
 include_directories(include)
 
+find_package(OpenMP)
+if (OPENMP_FOUND)
+    set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+endif()
+
 add_executable(test_complexe
         examples/test_complexe.c
         examples/utils.c
@@ -149,5 +154,10 @@ add_executable(test_gemv
         examples/utils.h
         )
 
-
-
+add_executable(test_gemm
+        examples/test_gemm.c
+        examples/utils.c
+        src/complexe.c
+        src/gemm.c
+        examples/flop.c
+        )

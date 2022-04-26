@@ -10,10 +10,13 @@ void mncblas_sgemv(const MNCBLAS_LAYOUT layout,
   register unsigned int j;
   register float save;
 
+  bool trans = (layout == MNCblasColMajor);
+  bool trans_a = trans ^ (TransA > MNCblasNoTrans);
+
   for (i = 0; i < M; i += incX) {
     save = beta * Y[i];
     for (j = 0; j < N; j += incY) {
-      save += alpha * A[i * N + j] * X[j];
+      save += alpha * *MAT_Y_X(float, A, M, N, i, j, trans_a) * X[j];
     }
     Y[i] = save;
   }
@@ -29,10 +32,13 @@ void mncblas_dgemv(MNCBLAS_LAYOUT layout,
   register unsigned int j;
   register double save;
 
+  bool trans = (layout == MNCblasColMajor);
+  bool trans_a = trans ^ (TransA > MNCblasNoTrans);
+
   for (i = 0; i < M; i += incX) {
     save = beta * Y[i];
     for (j = 0; j < N; j += incY) {
-      save += alpha * A[i * N + j] * X[j];
+      save += alpha * *MAT_Y_X(double, A, M, N, i, j, trans_a) * X[j];
     }
     Y[i] = save;
   }
@@ -46,6 +52,9 @@ void mncblas_cgemv(MNCBLAS_LAYOUT layout,
   register unsigned int i;
   register unsigned int j;
   register complexe_float_t save;
+
+  bool trans = (layout == MNCblasColMajor);
+  bool trans_a = trans ^ (TransA > MNCblasNoTrans);
 
   // cast
   complexe_float_t *Palpha = (complexe_float_t *) alpha;
@@ -61,7 +70,7 @@ void mncblas_cgemv(MNCBLAS_LAYOUT layout,
     for (j = 0; j < N; j += incY) {
       // alpha*A*x
       save = add_complexe_float(save, mult_complexe_float(
-              mult_complexe_float(*Palpha, PA[i * N + j]),
+              mult_complexe_float(*Palpha, *MAT_Y_X(complexe_float_t, PA, M, N, i, j, trans_a)),
               PX[j]));
     }
     PY[i] = save;
@@ -76,6 +85,9 @@ void mncblas_zgemv(MNCBLAS_LAYOUT layout,
   register unsigned int i;
   register unsigned int j;
   register complexe_double_t save;
+
+  bool trans = (layout == MNCblasColMajor);
+  bool trans_a = trans ^ (TransA > MNCblasNoTrans);
 
   // cast
   complexe_double_t *Palpha = (complexe_double_t *) alpha;
@@ -92,7 +104,7 @@ void mncblas_zgemv(MNCBLAS_LAYOUT layout,
       // alpha*A*x
       save = add_complexe_double(save,
                                  mult_complexe_double(
-                                         mult_complexe_double(*Palpha, PA[i * N + j]),
+                                         mult_complexe_double(*Palpha, *MAT_Y_X(complexe_double_t, PA, M, N, i, j, trans_a)),
                                          PX[j]));
     }
     PY[i] = save;

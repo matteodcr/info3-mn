@@ -1,5 +1,0 @@
-/home/matteo/Documents/code/info3-mn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/matteo/Documents/code/info3-mn/cmake-build-debug/CMakeFiles/test_poly.dir
-/home/matteo/Documents/code/info3-mn/cmake-build-debug/CMakeFiles/perf_poly.dir
-/home/matteo/Documents/code/info3-mn/cmake-build-debug/CMakeFiles/test_poly_creux.dir
-/home/matteo/Documents/code/info3-mn/cmake-build-debug/CMakeFiles/edit_cache.dir
