@@ -1,13 +1,6 @@
 #include "mnblas.h"
 #include "complexe.h"
-
-static float val_abs_float(float x) {
-  return x <= 0 ? -x : x;
-}
-
-static double val_abs_double(double x) {
-  return x <= 0 ? -x : x;
-}
+#include "math.h"
 
 CBLAS_INDEX mnblas_isamin(const int N, const float *X, const int incX) {
   register CBLAS_INDEX index_min;
@@ -55,10 +48,10 @@ CBLAS_INDEX mnblas_icamin(const int N, const void *X, const int incX) {
     return 0;
   } else {
     index_min = 0;
-    min = val_abs_float(PX->real + PX->imaginary);
+    min = fabsf(PX->real + PX->imaginary);
   }
   for (register unsigned int i = 1; i < N; i += incX) {
-    tmp = val_abs_float(PX[i].real + PX[i].imaginary);
+    tmp = fabsf(PX[i].real + PX[i].imaginary);
 
     if (tmp < min) {
       min = tmp;
@@ -78,10 +71,10 @@ CBLAS_INDEX mnblas_izamin(const int N, const void *X, const int incX) {
     return 0;
   } else {
     index_min = 0;
-    min = val_abs_double(PX->real + PX->imaginary);
+    min = fabs(PX->real + PX->imaginary);
   }
   for (register unsigned int i = 1; i < N; i += incX) {
-    tmp = val_abs_double(PX[i].real + PX[i].imaginary);
+    tmp = fabs(PX[i].real + PX[i].imaginary);
     if (tmp < min) {
       min = tmp;
       index_min = i;
