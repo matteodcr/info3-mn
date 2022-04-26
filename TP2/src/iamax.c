@@ -1,11 +1,11 @@
 #include "mnblas.h"
 #include "complexe.h"
 
-float val_abs_float(float x) {
+static float val_abs_float(float x) {
   return x <= 0 ? -x : x;
 }
 
-double val_abs_double(double x) {
+static double val_abs_double(double x) {
   return x <= 0 ? -x : x;
 }
 

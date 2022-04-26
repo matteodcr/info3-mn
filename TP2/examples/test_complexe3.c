@@ -8,13 +8,10 @@
 
 #include "flop.h"
 
-int main(int argc, char **argv) {
-  complexe_float_t c1 = {1.0, 2.0};
-  complexe_float_t c2 = {3.0, 6.0};
+int main() {
 
   complexe_double_t cd1;
   complexe_double_t cd2;
-  complexe_double_t cd3;
 
   unsigned long long int start, end;
   struct timeval start_val, end_val;
