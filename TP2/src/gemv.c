@@ -9,7 +9,7 @@ void mncblas_sgemv(const MNCBLAS_LAYOUT layout,
   bool trans = (layout == MNCblasColMajor);
   bool trans_a = trans ^ (TransA > MNCblasNoTrans);
 
-#pragma omp parallel for
+//#pragma omp parallel for
   for (unsigned int i = 0; i < M; i += incX) {
     float save = beta * Y[i];
     for (unsigned int j = 0; j < N; j += incY) {
@@ -28,7 +28,7 @@ void mncblas_dgemv(MNCBLAS_LAYOUT layout,
   bool trans = (layout == MNCblasColMajor);
   bool trans_a = trans ^ (TransA > MNCblasNoTrans);
 
-#pragma omp parallel for
+//#pragma omp parallel for
   for (unsigned int i = 0; i < M; i += incX) {
     double save = beta * Y[i];
     for (unsigned int j = 0; j < N; j += incY) {
@@ -54,7 +54,7 @@ void mncblas_cgemv(MNCBLAS_LAYOUT layout,
   complexe_float_t *PA = (complexe_float_t *) A;
 
   // y := alpha*A*x + beta*y
-#pragma omp parallel for
+//#pragma omp parallel for
   for (unsigned int i = 0; i < M; i += incX) {
     // beta*y
     complexe_float_t save = mult_complexe_float(*Pbeta, PY[i]);
@@ -84,7 +84,7 @@ void mncblas_zgemv(MNCBLAS_LAYOUT layout,
   complexe_double_t *PA = (complexe_double_t *) A;
 
 // y := alpha*A*x + beta*y
-#pragma omp parallel for
+//#pragma omp parallel for
   for (unsigned int i = 0; i < M; i += incX) {
     // beta*y
     complexe_double_t save = mult_complexe_double(*Pbeta, PY[i]);
@@ -92,7 +92,8 @@ void mncblas_zgemv(MNCBLAS_LAYOUT layout,
       // alpha*A*x
       save = add_complexe_double(save,
                                  mult_complexe_double(
-                                         mult_complexe_double(*Palpha, *MAT_Y_X(complexe_double_t, PA, M, N, i, j, trans_a)),
+                                         mult_complexe_double(*Palpha,
+                                                              *MAT_Y_X(complexe_double_t, PA, M, N, i, j, trans_a)),
                                          PX[j]));
     }
     PY[i] = save;

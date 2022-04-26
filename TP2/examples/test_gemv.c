@@ -151,11 +151,11 @@ int main(int argc, char **argv) {
 
   init_flop_nano();
 
-  float* matF = malloc(SIZE * SIZE * sizeof(float));
+  float *matF = malloc(SIZE * SIZE * sizeof(float));
   fill_vec_float(matF, SIZE * SIZE, 1.0f);
-  float* vecF = malloc(SIZE * sizeof(float));
+  float *vecF = malloc(SIZE * sizeof(float));
   fill_vec_float(vecF, SIZE, 1.0f);
-  float* vecF_r = malloc(SIZE * sizeof(float));
+  float *vecF_r = malloc(SIZE * sizeof(float));
 
   for (i = 0; i < NB_FOIS; i++) {
     TOP_NANO(start_spec)
@@ -168,11 +168,11 @@ int main(int argc, char **argv) {
 
   init_flop_nano();
 
-  double* matD = malloc(SIZE * SIZE * sizeof(double));
+  double *matD = malloc(SIZE * SIZE * sizeof(double));
   fill_vec_double(matD, SIZE * SIZE, 1.0);
-  double* vecD = malloc(SIZE * sizeof(double));
+  double *vecD = malloc(SIZE * sizeof(double));
   fill_vec_double(vecD, SIZE, 1.0);
-  double* vecD_r = malloc(SIZE * sizeof(double));
+  double *vecD_r = malloc(SIZE * sizeof(double));
 
   for (i = 0; i < NB_FOIS; i++) {
     TOP_NANO(start_spec)
@@ -185,15 +185,16 @@ int main(int argc, char **argv) {
 
   init_flop_nano();
 
-  complexe_float_t* matC = malloc(SIZE * SIZE * sizeof(complexe_float_t));
+  complexe_float_t *matC = malloc(SIZE * SIZE * sizeof(complexe_float_t));
   fill_vec_complexe_float(matC, SIZE * SIZE, 1, 0);
-  complexe_float_t* vecC = malloc(SIZE * sizeof(complexe_float_t));
+  complexe_float_t *vecC = malloc(SIZE * sizeof(complexe_float_t));
   fill_vec_complexe_float(vecC, SIZE, 1, 0);
-  complexe_float_t* vecC_r = malloc(SIZE * sizeof(complexe_float_t));
+  complexe_float_t *vecC_r = malloc(SIZE * sizeof(complexe_float_t));
 
   for (i = 0; i < NB_FOIS; i++) {
     TOP_NANO(start_spec)
-    mncblas_cgemv(MNCblasRowMajor, MNCblasNoTrans, SIZE, SIZE, &(complexe_float_t) { .real = 1, .imaginary = 0 }, matC, 0, vecC, 1, &(complexe_float_t) { .real = 0, .imaginary = 0 }, vecC_r, 1);
+    mncblas_cgemv(MNCblasRowMajor, MNCblasNoTrans, SIZE, SIZE, &(complexe_float_t) {.real = 1, .imaginary = 0}, matC, 0,
+                  vecC, 1, &(complexe_float_t) {.real = 0, .imaginary = 0}, vecC_r, 1);
     TOP_NANO(end_spec)
 
     calcul_flop_nano("sdot nano ", 2 * SIZE * SIZE, tdiff_nano(&start_spec, &end_spec));
@@ -202,15 +203,16 @@ int main(int argc, char **argv) {
 
   init_flop_nano();
 
-  complexe_double_t* matZ = malloc(SIZE * SIZE * sizeof(complexe_double_t));
+  complexe_double_t *matZ = malloc(SIZE * SIZE * sizeof(complexe_double_t));
   fill_vec_complexe_double(matZ, SIZE * SIZE, 1, 0);
-  complexe_double_t* vecZ = malloc(SIZE * sizeof(complexe_double_t));
+  complexe_double_t *vecZ = malloc(SIZE * sizeof(complexe_double_t));
   fill_vec_complexe_double(vecZ, SIZE, 1, 0);
-  complexe_double_t* vecZ_r = malloc(SIZE * sizeof(complexe_double_t));
+  complexe_double_t *vecZ_r = malloc(SIZE * sizeof(complexe_double_t));
 
   for (i = 0; i < NB_FOIS; i++) {
     TOP_NANO(start_spec)
-    mncblas_cgemv(MNCblasRowMajor, MNCblasNoTrans, SIZE, SIZE, &(complexe_double_t) { .real = 1, .imaginary = 0 }, matZ, 0, vecZ, 1, &(complexe_double_t) { .real = 0, .imaginary = 0 }, vecZ_r, 1);
+    mncblas_cgemv(MNCblasRowMajor, MNCblasNoTrans, SIZE, SIZE, &(complexe_double_t) {.real = 1, .imaginary = 0}, matZ,
+                  0, vecZ, 1, &(complexe_double_t) {.real = 0, .imaginary = 0}, vecZ_r, 1);
     TOP_NANO(end_spec)
 
     calcul_flop_nano("sdot nano ", 2 * SIZE * SIZE, tdiff_nano(&start_spec, &end_spec));

@@ -1,4 +1,4 @@
-all: test_complexe3 test_complexe2 test_complexe test_dot test_dot_dyn test_copy test_asum test_iamax test_iamin test_nrm2 test_swap test_axpy
+all: test_complexe3 test_complexe2 test_complexe test_dot test_dot_dyn test_copy test_asum test_iamax test_iamin test_nrm2 test_swap test_axpy test_gemv test_gemm
 
 INC_DIR=../include
 
@@ -80,6 +80,18 @@ test_axpy: test_axpy.o utils.o flop.o $(LIB_DIR)/libmnblas.a
 
 test_axpy.o : test_axpy.c $(INC_DIR)/mnblas.h utils.h
 	gcc $(OPTIONS_COMPIL) -c test_axpy.c
+
+test_gemv: test_gemv.o utils.o flop.o $(LIB_DIR)/libmnblas.a
+	gcc -o test_gemv test_gemv.o flop.o utils.o $(OPTIONS_LINK_STATIC) -lm
+
+test_gemv.o : test_gemv.c $(INC_DIR)/mnblas.h utils.h
+	gcc $(OPTIONS_COMPIL) -c test_gemv.c
+
+test_gemm: test_gemm.o utils.o flop.o $(LIB_DIR)/libmnblas.a
+	gcc -o test_gemm test_gemm.o flop.o utils.o $(OPTIONS_LINK_STATIC) -lm
+
+test_gemm.o : test_gemm.c $(INC_DIR)/mnblas.h utils.h
+	gcc $(OPTIONS_COMPIL) -c test_gemm.c
 
 
 
