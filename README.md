@@ -1,3 +1,2 @@
 # info3-mn
-
-Les executables `test_po`
+On peut utiliser cmake ou chaque makefile individuellement.
