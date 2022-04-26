@@ -21,7 +21,7 @@
 #include "utils.h"
 
 #endif
-#define NB_FOIS 10
+#define NB_FOIS 4
 #define SIZE 65536
 
 int main(int argc, char **argv) {
@@ -119,7 +119,6 @@ int main(int argc, char **argv) {
   struct timespec start_spec, end_spec;
   unsigned long long int start_tsc, end_tsc;
 
-  float res_FLOAT;
   int i;
   init_flop_tsc();
 
@@ -136,7 +135,6 @@ int main(int argc, char **argv) {
     calcul_flop_tsc("sdot tsc ", 2 * SIZE, end_tsc - start_tsc);
   }
 
-  printf("res = %f\n", res_FLOAT);
   printf("==========================================================\n");
 
   init_flop_micro();
@@ -152,7 +150,6 @@ int main(int argc, char **argv) {
     calcul_flop_micro("sdot micro", 2 * SIZE, tdiff_micro(&start, &end));
   }
 
-  printf("res = %f\n", res_FLOAT);
   printf("==========================================================\n");
 
   init_flop_nano();
@@ -172,7 +169,6 @@ int main(int argc, char **argv) {
   printf("PERFORMANCES DOUBLE");
   printf("\n=========================================================\n\n");
 
-  double res_DOUBLE;
   init_flop_tsc();
 
   for (i = 0; i < NB_FOIS; i++) {
@@ -188,7 +184,6 @@ int main(int argc, char **argv) {
     calcul_flop_tsc("sdot tsc", 2 * SIZE, end_tsc - start_tsc);
   }
 
-  printf("res = %f\n", res_DOUBLE);
   printf("==========================================================\n");
 
   init_flop_micro();
@@ -204,7 +199,6 @@ int main(int argc, char **argv) {
     calcul_flop_micro("sdot micro", 2 * SIZE, tdiff_micro(&start, &end));
   }
 
-  printf("res = %f\n", res_DOUBLE);
   printf("==========================================================\n");
 
   init_flop_nano();

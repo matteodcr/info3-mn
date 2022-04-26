@@ -10,7 +10,7 @@ OPTIM=-O2 -fopenmp
 OPTIONS=-O2 -Wall -fPIC $(OPTIM) -I$(INC_DIR)
 # Bibliothèque statique
 
-OBJECTS=copy.o swap.o dot.o complexe.o asum.o iamin.o iamax.o nrm2.o
+OBJECTS=copy.o swap.o dot.o complexe.o asum.o iamin.o iamax.o nrm2.o axpy.o
 
 libmnblas.a: $(OBJECTS)
 	rm -f libmnblas.a $(LIB_DIR)/libmnblas.a
@@ -49,6 +49,9 @@ iamax.o : asum.c $(INC_DIR)/mnblas.h
 
 nrm2.o : asum.c $(INC_DIR)/mnblas.h
 	gcc  $(OPTIONS) -c nrm2.c
+
+axpy.o : axpy.c $(INC_DIR)/mnblas.h
+	gcc  $(OPTIONS) -c axpy.c
 
 # BLAS 2
 
